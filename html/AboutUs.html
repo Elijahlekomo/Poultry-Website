@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="POULTRY.css" />
+  <!--=============== BOX ICONS ================-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <title>Leburu Farms</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+  <header>
+    <a href="#"></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li class="active"><a href="./Poultry.html">Home</a></li>
+      <li class="active"><a href="./AboutUs.html">About Us</a></li>
+      <li class="active"><a href="./Poultry.html">Our Products</a></li>
+      <li class="active"><a href="./Poultry.html">Services</a></li>
+      <li class="active"><a href="./Contact.html">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <section class="home1" id="home1">
+    <div class="text1">
+      <a href="#" class="logo"><img src="/IMG/pasted image 0.png" alt=""></a>
+      <h1>Leburu  Farms, About Us </h1>
+      <div class="about-text1">
+        <a href="./Poultry.html" class="btn">Home</a>
+       </div>
+    </div>
+  </section>
+
+    <!--==================== ABOUT ====================-->
+ <section class="about" id="about">
+    <div class="heading">
+      <span>About Us</span>
+      <h1>Best Customer Experience</h1>
+    </div>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="IMG/WhatsApp Image 2023-08-11 at 2.20.29 PM.jpeg" alt="">
+      </div>
+      <div class="about-text1">
+        <span>Who We Are</span>
+        <p>Leburu Poultry Farm offers a diverse range of high-quality services and services.
+          Our offerings include premium quality eggs, day-one layer chicks, roosters, hens,
+          and comprehensive training services tailored to aspiring farmers.
+          Through our practical experience and commitment to excellence,
+        </p>
+        <p>
+          we aim to attract customers and create long-lasting partnerships. Additionally,
+          we plan to expand our product line to partner with local retailers for egg sales,
+          become the recommended day-one layer chick seller, and employ over 100 local personnel.
+          We also aspire to train and inspire a community of farmers, fostering growth and sustainability.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+<!--==================== CONTACT ====================-->
+<section class="contact section" id="contact">
+    
+  <h2 class="section__title">contact Us</h2>
+  <span class="section__subtitle">Get in touch</span>
+
+  <div class="contact__container container grid section__border">
+    <div class="contact__content">
+      <h3 class="contact__title">
+        <i class="ri-chat-3-line"></i> Talk to Us
+      </h3>
+
+      <div class="contact__info">
+        <div class="contact__data">
+          <span class="contact__data-title"><i class="ri-mail-send-line"></i> email</span>
+          <span class="contact__data-info">info@leburufarms.co.za</span>
+        </div>
+
+        <div class="contact__data">
+          <span class="contact__data-title"> <i class="ri-whatsapp-line"></i> Whatsapp</span>
+          <span class="contact__data-info">+27 81 326 1724</span>
+          <!--Insert a real number plus country code-->
+          <a href="https://api.whatsapp.com/send?phone=27678486435&text=hello, more information!" target="_blank" class="contact__button">
+            Chat With Us <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+        <div class="contact__data">
+          <span class="contact__data-title"><i class="ri-time-line"></i> Mon - Thu (09h:00 - 16h:00)</span>
+          <span class="contact__data-info">(except public holidays)</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contact__content">
+      <h3 class="contact__title">
+        <i class="ri-send-plane-line"></i> Get a quote
+      </h3>
+
+      <form action="Poultry.php" method="post" class="contact__form" id="contact-form">
+        <div class="contact__form-div">
+          <label  class="contact__form-tag">Names</label>
+          <input type="text" name="user_name" required placeholder="write your names" class="contact__form-input" id="contact-name">
+        </div>
+
+        <div class="contact__form-div">
+          <label  class="contact__form-tag">Mail</label>
+          <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+        </div>
+
+        <div class="contact__form-div contact__form-area">
+          <label  class="contact__form-tag">Message</label>
+          <textarea name="message" placeholder="Write your Message" id="contact-project" class="contact__form-input" id="contact-project"></textarea>
+        </div>
+        
+        <p class="contact__message" id="contact-message"></p>
+
+        <button type="submit" class="contact__button">
+            submit <i class="ri-arrow-right-up-line"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!--==================== FOOTER ====================-->
+<footer class="newsletter" id="footer">
+    
+  <div class="copyright">
+
+     <p>&#169; 2023 Leburu Farms. All rights reserved</p>
+     <div class="social">
+         <a href="#"><i class='bx bxl-facebook'></i></a>
+         <a href="#"><i class='bx bxl-twitter'></i></a>
+         <a href="#"><i class='bx bxl-instagram'></i></a>
+     </div>
+  </div>
+ </footer>
+   <!--============ ScrollReveal ============-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+ <!--=============== EMAIL JS ===============-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <!--============ Link To js ============-->
+   <script src="POultry.js"></script>
+
+</body>
+</html>
