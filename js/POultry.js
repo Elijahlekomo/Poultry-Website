@@ -11,6 +11,15 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
+/*=============== Image Slider ===============*/
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4) {
+    counter = 1;
+  }
+}, 5000);
 
 /*=============== EMAIL JS ===============*/
 // const contactForm = document.getElementById('contact-form'),
@@ -58,24 +67,24 @@ window.onscroll = () => {
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr =ScrollReveal ({
   distance: '60px',
-  duration: 2500,
-  delay: 400,
+  duration: 2000,
+  delay: 300,
   // reset: true,
 })
 
 sr.reveal('.text',{delay: 100, origin: 'bottom'})
 sr.reveal('.text1',{delay: 100, origin: 'bottom'})
-sr.reveal('.form-container form', {delay: 650, origin: 'left'})
+sr.reveal('.form-container form', {delay: 500, origin: 'left'})
 sr.reveal('.heading', {delay: 300, origin: 'top'})
 
-sr.reveal('.about-img', {delay: 450, origin: 'left'})
-sr.reveal('.about-img1', {delay: 450, origin: 'left'})
-sr.reveal('.about-text',{delay: 350, origin: 'right'})
-sr.reveal('.about-text1',{delay: 450, origin: 'right'})
+sr.reveal('.about-img', {delay: 400, origin: 'left'})
+sr.reveal('.about-img1', {delay: 400, origin: 'left'})
+sr.reveal('.about-text',{delay: 300, origin: 'right'})
+sr.reveal('.about-text1',{delay: 400, origin: 'right'})
 
-sr.reveal('.row-1', {delay: 350, origin: 'right'})
-sr.reveal('.row-2', {delay: 350, origin: 'left'})
-sr.reveal('.services-container .box', {delay: 350, origin: 'top'})
+sr.reveal('.row-1', {delay: 300, origin: 'right'})
+sr.reveal('.row-2', {delay: 300, origin: 'left'})
+sr.reveal('.services-container .box', {delay: 300, origin: 'top'})
 
 sr.reveal('.contact__content:nth-child(1)', {origin: `left`})  
 sr.reveal('.contact__content:nth-child(2)', {origin: `right`})  

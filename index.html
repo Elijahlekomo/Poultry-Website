@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="IMG/favicon (1).ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon" />
 
   <!--=============== REMIXICONS ===============-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
 
   <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="POULTRY.css" />
+  <link rel="stylesheet" href="css/POULTRY.css" />
   <!--=============== BOX ICONS ================-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-  <title>Leburu Farms</title>
+  <title>Poultry Palace</title>
 </head>
 
 <body>
@@ -30,27 +30,63 @@
 
     <ul class="navbar">
       <li class="active"><a href="#home">Home</a></li>
-      <li class="active"><a href="./AboutUs.html">About Us</a></li>
+      <li class="active"><a href="html/AboutUs.html">About Us</a></li>
       <li class="active"><a href="#products">Our Products</a></li>
       <li class="active"><a href="#services">Services</a></li>
-      <li class="active"><a href="./Contact.html">Contact Us</a></li>
+      <li class="active"><a href="html/Contact.html">Contact Us</a></li>
     </ul>
   </header>
   <!--==================== HOME ====================-->
   <section class="home" id="home">
-    <div class="text">
-      <a href="#" class="logo"><img src="IMG/pasted image 0.png" alt=""></a>
-      <h1>Poultry Dreams, Delivered to Your Doorstep </h1>
-      <div class="about-text">
-        <a href="#products" class="btn" id="btn">Discover More</a>
-        <a href="#contacts" class="btn">Purchase Now</a>
+      <div class="slider">
+        <div class="slides">
+          
+          <div class="text">
+            <a href="#" class="logo"><img src="img/Logo1.png" alt=""></a>
+            <h1>"Eggstraordinary Quality, Eggceptional Service" </h1>
+            <div class="about-text">
+              <a href="#products" class="btn" id="btn">Discover More</a>
+              <a href="#contacts" class="btn">Purchase Now</a>
+            </div>
+          </div>
+
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+          <div class="slide first">
+            <img src="img/rooster.jpg" alt="">
+          </div>  
+          <div class="slide">
+            <img src="img/organicChicken.jpg" alt="">
+          </div>  
+          <div class="slide">
+            <img src="img/chicken3.jpg" alt="">
+          </div>  
+          <div class="slide">
+            <img src="img/chicken4.jpeg" alt="">
+          </div>          
+          
+          <!-- ============== Automatic navigation start ============== -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+          <!-- ============== Automatic navigation end ============== -->
+
+          <!-- ============== Manual navigation start ============== -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        
       </div>
-      <!--<div class="slide">
-        <img src="IMG/james-wainscoat-yEW23jxVsNI-unsplash.jpg" alt="">
-        <img src="IMG/nick-fewings-qlLCBkTSYAI-unsplash.jpg" alt="">
-        <img src="IMG/WhatsApp Image 2023-08-11 at 2.20.32 PM.jpeg" alt="">
-      </div>-->
-    </div>
   </section>
   <!--==================== OUR TEAM ====================-->
   <section class="our_team" id="our-team">
@@ -62,26 +98,26 @@
   <div class="team-container">
       <div class="box">
           <div class="box-img">
-              <img src="img/car1.jpg" alt="">
+              <img src="img/rev3.jpg" alt="">
           </div>   
-          <h3>Mrs Nthabiseng Leburu</h3>
+          <h3>Rebecca</h3>
           <h2>Owner & CEO</h2>
       </div>
 
       <div class="box">
           <div class="box-img">
-              <img src="img/car2.jpg" alt="">
+              <img src="img/rev2.jpg" alt="">
           </div>
-          <h3>Mr Olebeng Leburu</h3>
+          <h3>David</h3>
           <h2>Executive Director</h2>
       </div>
 
       <div class="box">
         <div class="box-img">
-            <img src="img/car2.jpg" alt="">
+            <img src="img/rev1.jpg" alt="">
         </div>
-        <h3>Mr Olebeng Leburu</h3>
-        <h2>Executive Director</h2>
+        <h3>Mark</h3>
+        <h2>Assistant Director</h2>
     </div>
 
   </section>
@@ -94,20 +130,20 @@
     </div>
     <div class="about-container">
       <div class="about-img">
-        <img src="IMG/WhatsApp Image 2023-08-11 at 2.20.29 PM.jpeg" alt="">
+        <img src="IMG/rooster.jpg" alt="">
       </div>
       <div class="about-text">
         <span>Who We Are</span>
-        <p>Leburu Poultry Farm offers a diverse range of high-quality services and services.
-          Our offerings include premium quality eggs, day-one layer chicks, roosters, hens,
-          and comprehensive training services tailored to aspiring farmers.
-          Through our practical experience and commitment to excellence,
+        <p>At Poultry Palace, our story begins with a deep-rooted love for 
+          poultry farming, where our commitment to quality and excellence 
+          in poultry farming is unmatched With years of experience and a passion
+          for sustainable agriculture, we take pride in offering premium, 
+          ethically-raised poultry products to our customers. 
         </p>
         <p>
-          we aim to attract customers and create long-lasting partnerships. Additionally,
-          we plan to expand our product line to partner with local retailers for egg sales,
-          become the recommended day-one layer chick seller, and employ over 100 local personnel.
-          We also aspire to train and inspire a community of farmers, fostering growth and sustainability.
+          We believe in transparency, and our commitment to humane and 
+          sustainable farming practices is evident in every aspect of our operation. 
+          Join us on our journey, and let our passion for poultry elevate your dining experience.
         </p>
         <a href="#" class="btn">Learn More</a>
       </div>
@@ -125,69 +161,70 @@
       <div class="row-1">
         <div class="box">
             <div class="box-img">
-                <img src="IMG/morgane-perraud-Jc2JGFFsfNI-unsplash.jpg" alt="">
+                <img src="IMG/FreeRangeChickenFarming.jpg" alt="">
             </div>
-            <p><h3>Premium Quality Eggs</h3></p>           
-            <h2>Our eggs, cultivated with the utmost care and diligence,
-              epitomize freshness and flavor. The result of meticulous
-              attention to diet, health, and husbandry,
-              these eggs exemplify the pinnacle of poultry produce. </h2> 
+            <p><h3>Free-Range Chicken</h3></p>           
+            <h2>Discover the exceptional taste of our free-range
+               chickens that roam freely in open pastures. 
+               Raised with care and without antibiotics, 
+               our free-range chickens deliver a delicious,
+               natural flavor that sets them apart.</h2> 
         </div>
 
         <div class="box">
             <div class="box-img">
-                <img src="IMG/WhatsApp Image 2023-08-11 at 2.20.29 PM.jpeg" alt="">
+                <img src="IMG/organicChicken.jpg" alt="">
             </div>
-            <p><h3>Day 1 layer and broiler chicks</h3></p>
-            <h2>Leburu Poultry Farm is the premier destination for acquiring
-              day-one layer and broiler chicks. Ensuring robust genetics and optimal health,
-              we provide the foundation for a thriving poultry enterprise.</h2>  
+            <p><h3>Organic Chicken</h3></p>
+            <h2>Indulge in the purity of our organic chicken, 
+              raised on a certified organic diet. With no 
+              synthetic hormones or pesticides, our organic chickens offer a 
+              wholesome and nutritious choice for health-conscious consumers.</h2>  
         </div>
 
          <div class="box">
           <div class="box-img">
-              <img src="IMG/WhatsApp Image 2023-08-11 at 2.20.29 PM.jpeg" alt="">
+              <img src="IMG/HeritageChicken.png" alt="">
           </div>
-          <p><h3>Day 1 layer and broiler chicks</h3></p>
-          <h2>Leburu Poultry Farm is the premier destination for acquiring
-            day-one layer and broiler chicks. Ensuring robust genetics and optimal health,
-            we provide the foundation for a thriving poultry enterprise.</h2>  
+          <p><h3> Heritage Breed Chicken</h3></p>
+          <h2>Experience the rich heritage and distinctive flavors 
+            of our carefully selected heritage breed chickens.
+             Known for their unique characteristics and traditional breeding,
+             these chickens bring a touch of nostalgia to your table.</h2>  
          </div>
        </div>
 
       <div class="row-2">
         <div class="box">
             <div class="box-img">
-                <img src="IMG/wolfgang-hasselmann-uMfSHeycnYQ-unsplash.jpg" alt="">
+                <img src="img/Gourmet Chicken.png" alt="">
             </div>
-            <p><h3>Roosters and hens</h3></p>
-            <h2>Our selection of roosters and hens showcases a
-              commitment to fostering resilient and productive flocks.
-              These birds, raised in an environment that emphasizes their well-being,
-              contribute to the vitality of your poultry operations. </h2>
+            <p><h3>Gourmet Chicken Products</h3></p>
+            <h2>Elevate your culinary experience with our gourmet chicken products,
+               including marinated cuts, sausages, and artisanal chicken creations.
+               Crafted with precision and culinary expertise, these products are 
+               perfect for those who appreciate exceptional taste.</h2>
             
         </div>
 
         <div class="box">
             <div class="box-img">
-                <img src="IMG/james-wainscoat-yEW23jxVsNI-unsplash.jpg" alt="">
+                <img src="IMG/freshWholeChicken1.jpg" alt="">
             </div>
-            <p><h3>Comprehensive Training</h3></p>
-            <h2>Our selection of roosters and hens showcases a 
-              commitment to fostering resilient and productive flocks. 
-              These birds, raised in an environment that emphasizes their well-being,
-               contribute to the vitality of your poultry operations. </h2>
+            <p><h3>Fresh Whole Chickens</h3></p>
+            <h2>From our farm to your table, enjoy the simplicity and freshness 
+              of our whole chickens. Perfect for roasting, grilling, or slow-cooking,
+              these chickens are the centerpiece of a wholesome and hearty meal. </h2>
         </div>
 
         <div class="box">
           <div class="box-img">
-              <img src="IMG/james-wainscoat-yEW23jxVsNI-unsplash.jpg" alt="">
+              <img src="IMG/specialCuts.png" alt="">
           </div>
-          <p><h3>Comprehensive Training</h3></p>
-          <h2>Our selection of roosters and hens showcases a 
-            commitment to fostering resilient and productive flocks. 
-            These birds, raised in an environment that emphasizes their well-being,
-             contribute to the vitality of your poultry operations. </h2>
+          <p><h3>Specialty Cuts</h3></p>
+          <h2>Explore our selection of expertly butchered specialty cuts,
+             including boneless breasts, thighs, and drumsticks. Whether you're 
+             a chef or a home cook, our cuts are designed to make meal preparation convenient and delightful.</h2>
        </div>
       </div>
     </div>
@@ -206,15 +243,14 @@
         <img src="IMG/pngwing.com (1).png" alt="">
 
         <h2 class="services__title">
-          Consultations on starting a<br>
-          poultry farm
+          Poultry Farm </br>Tours
         </h2>
 
         <p class="services__description">
-          Our team of seasoned experts provides invaluable insights
-          into the nuances of starting and managing a poultry farm.
-          From site selection to operational strategies,
-          our consultations pave the way for informed decisions.
+          Embark on an educational and entertaining journey with our 
+          guided poultry farm tours. Experience firsthand the care and
+          dedication that goes into raising our chickens. Ideal for families,
+          students, and anyone curious about sustainable farming practices.        
         </p>
 
         <div class="services__border"></div>
@@ -225,15 +261,14 @@
           <img src="IMG/pngegg (1).png" alt="">
 
         <h2 class="services__title">
-          Financial forecasting <br>
-          of running a farm
+          Educational Workshops
         </h2>
 
         <p class="services__description">
-          Leverage our financial forecasting services to gain a clear
-          understanding of the economic landscape of running a poultry farm.
-          Our meticulous analysis aids in prudent resource allocation and
-          long-term planning.
+          Learn the art and science of poultry farming through our engaging
+          workshops. Led by our experienced team, these sessions cover 
+          topics such as sustainable practices,poultry nutrition,
+          and the importance of humane farming.
         </p>
 
         <div class="services__border"></div>
@@ -243,15 +278,15 @@
         <img src="IMG/pngwing.com.png" alt="">
 
         <h2 class="services__title">
-          Training The<br>
-          Youth
+          Customized Poultry<br>
+          Packages
         </h2>
 
         <p class="services__description">
-          Our team of seasoned experts provides invaluable insights
-          into the nuances of starting and managing a poultry farm.
-          From site selection to operational strategies,
-          our consultations pave the way for informed decisions.
+          ailored to meet your specific needs, our customized poultry 
+          packages are perfect for businesses, events, and individuals looking
+          for a personalized poultry experience.From bulk orders to specialty cuts, 
+          we cater to your unique requirements.
         </p>
 
         <div class="services__border"></div>
@@ -262,24 +297,24 @@
   <!--==================== CONTACT ====================-->
   <section class="contact section" id="contact">
     
-    <h2 class="section__title">contact Us</h2>
+    <h2 class="section__title">Contact Us</h2>
     <span class="section__subtitle">Get in touch</span>
 
     <div class="contact__container container grid section__border">
       <div class="contact__content">
         <h3 class="contact__title">
-          <i class="ri-chat-3-line"></i> Talk to Us
+          <i class="ri-chat-3-line"></i> Talk to us
         </h3>
 
         <div class="contact__info">
           <div class="contact__data">
             <span class="contact__data-title"><i class="ri-mail-send-line"></i> email</span>
-            <span class="contact__data-info">info@leburufarms.co.za</span>
+            <span class="contact__data-info">lekomoe@gmail.com</span>
           </div>
 
           <div class="contact__data">
             <span class="contact__data-title"> <i class="ri-whatsapp-line"></i> Whatsapp</span>
-            <span class="contact__data-info">+27 81 326 1724</span>
+            <span class="contact__data-info">+27 67 848 6435</span>
             <!--Insert a real number plus country code-->
             <a href="https://api.whatsapp.com/send?phone=27678486435&text=hello, more information!" target="_blank" class="contact__button">
               Chat With Us <i class="ri-arrow-right-line"></i>
@@ -330,7 +365,7 @@
     
    <div class="copyright">
 
-      <p>&#169; 2023 Leburu Farms. All rights reserved</p>
+      <p>&#169; 2023 Poultry Palace. All rights reserved</p>
       <div class="social">
           <a href="#"><i class='bx bxl-facebook'></i></a>
           <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -347,7 +382,7 @@
   <!--=============== EMAIL JS ===============-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <!--============ Link To js ============-->
-  <script src="POultry.js"></script>
+  <script src="js/POultry.js"></script>
 </body>
 
 </html>

@@ -8,10 +8,11 @@
   
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(207, 65%, 65%);
+    --first-color: #ffac38; 
     --title-color: hsl(207, 4%, 16%);
     --text-color: hsl(207, 4%, 28%);
     --text-color-light: hsl(207, 4%, 56%);
+    --white-color: hsl(0, 0%, 95%);
     --body-color: hsl(207, 4%, 99%);
     --container-color: hsl(207, 4%, 95%);
   
@@ -122,6 +123,7 @@ section{
     padding: 50px 100px;
 }
 
+
 /* ====================  Header & Navbar ====================  */
 header{
     position: fixed;
@@ -172,31 +174,110 @@ header{
 
 /* ==================== HOME ==================== */
 .home{
+  padding: 0;
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  display: grid;
-  align-items: center;
-  animation: animate 15s ease-in-out infinite alternate;
-  /* grid-template-columns: repeat(2, 1fr); */
 }
 
+.slider{
+  width: 100%; 
+  height: 650px; 
+  border-radius: 10px;
+  overflow: hidden;  
+}
+ .slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
 
+.slides input{
+  display: none;
+}
 
-@keyframes animate{
-0%{
-  background-image: url(IMG/james-wainscoat-yEW23jxVsNI-unsplash.jpg);
+.slide{
+  width: 20%;
+  transition: 2s;
 }
-50%{
-  background-image: url(IMG/nick-fewings-qlLCBkTSYAI-unsplash.jpg);
+
+.slider .slide img{
+  width: 100%;
+  height: auto;
 }
-100%{
-  background-image: url(IMG/WhatsApp\ Image\ 2023-08-11\ at\ 2.20.32\ PM.jpeg);
+
+ .navigation-manual{
+  position: absolute;
+  width: 1230px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
+
+.manual-btn{
+  border: 2px solid var(--main-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: var(--main-color);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  position: absolute; 
+  display: flex;
+  width: 1230px;
+  justify-content: center;
+  margin-top: 600px;
+}
+
+.navigation-auto div{
+  border: 2px solid var(--first-color);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: var(--main-color);
+} 
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: var(--main-color);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: var(--main-color);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: var(--main-color);
+}
+
 
 .home::before{
   content:'';
@@ -207,16 +288,20 @@ header{
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.529);
-}
+  background-color: rgba(0, 0, 0, 0.476);
+} 
 
 .text{
-    position: relative; 
+    position: absolute; 
     text-align: center;
     color: white;
-    margin: 00.9rem 0 0.5rem;
-    font-size: 2.5rem;
+    margin-top: 20%;
+    margin-left: 20%;
+    font-size: 1.5rem;
     letter-spacing: .5px;
+}
+.text h1{
+  padding-bottom: 40px;
 }
 
 /* ==================== HOME 1 (About Us) ==================== */
@@ -266,7 +351,7 @@ header{
 }
 .team-container .box{
   padding: 10px;
-  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.030);
+  box-shadow: 4px 16px 61px rgba(122, 119, 119, 0.1);
   text-align: center;
   transition: transform 250ms;
   /* width: 370px; */
@@ -274,7 +359,7 @@ header{
 
 .team-container .box:hover{
   transform: translateY(-10px);
-  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 32px 81px  rgba(1, 1, 1, 0.282);
 }
 
 .team-container .box .box-img{
@@ -347,7 +432,7 @@ header{
 }
 
 .about-text .btn:hover{
-    background: var(--third-color);
+    background: var(--white-color);
     color: var(--main-color);
 }
 
@@ -650,6 +735,7 @@ margin: 0.5rem 0 1.4rem;
    flex-direction: column;
    align-items: center;
 }
+
 .copyright{
     padding: 20px;
     display: flex;
