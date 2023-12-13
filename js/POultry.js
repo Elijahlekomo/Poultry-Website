@@ -67,14 +67,14 @@ setInterval(function(){
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr =ScrollReveal ({
   distance: '60px',
-  duration: 2000,
-  delay: 300,
+  duration: 1500,
+  delay: 250,
   // reset: true,
 })
 
 sr.reveal('.text',{delay: 100, origin: 'bottom'})
 sr.reveal('.text1',{delay: 100, origin: 'bottom'})
-sr.reveal('.form-container form', {delay: 500, origin: 'left'})
+sr.reveal('.form-container form', {delay: 400, origin: 'left'})
 sr.reveal('.heading', {delay: 300, origin: 'top'})
 
 sr.reveal('.about-img', {delay: 400, origin: 'left'})
