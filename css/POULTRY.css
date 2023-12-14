@@ -922,6 +922,13 @@ margin: 0.5rem 0 1.4rem;
 }
 
 @media(max-width: 450px){
+  .about-text .btn{
+    font-size: 0.7rem;
+    padding: 10px 20px;
+   }
+  .about-text #btn{
+    padding: 8px 18px;
+  }
   .slider{
     width: 107.8%; 
   }
@@ -939,7 +946,7 @@ margin: 0.5rem 0 1.4rem;
   }
 }
 
-@media(max-width: 360px){
+@media(max-width: 390px){
     header{
         padding: 6px 14px;
     }
@@ -949,11 +956,20 @@ margin: 0.5rem 0 1.4rem;
     section{
         padding: 50px 14px;
     }
+    .navigation-manual{
+      margin-top: -80px;
+    }
+    .navigation-auto{
+      margin-top: 420px;
+    }
     .slider{
-      height: 420px; 
+      height: 440px; 
     }
     .home::before{
-      height: 420px;
+      height: 440px;
+    }
+    .our_team{
+      margin-top: -12rem;
     }
     .services-container{
         grid-template-columns: repeat(auto-fit, minmax(254px, auto));
