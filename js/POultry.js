@@ -19,7 +19,7 @@ setInterval(function(){
   if(counter > 4) {
     counter = 1;
   }
-}, 5000);
+}, 3000);
 
 /*=============== EMAIL JS ===============*/
 // const contactForm = document.getElementById('contact-form'),
