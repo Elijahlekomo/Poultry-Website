@@ -2,10 +2,10 @@
 A poultry website with interface designed to provide valuable information, resources, and a sense of community for poultry lovers.
 
 🌐 [Live View](https://poultry-palace.netlify.app/)   
-Built project with:   
+Built project with:  
+ - JavaScript
  - HTML
  - CSS
- - JavaScript
 ## Screenshot of the project     
 🏠 __Home Page__    
 
