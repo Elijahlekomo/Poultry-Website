@@ -3,8 +3,8 @@ A poultry website with interface designed to provide valuable information, resou
 
 🌐 [Live View](https://poultry-palace.netlify.app/)   
 Built project with:   
- - HTML
  - CSS
+ - HTML
  - JavaScript
 ## Screenshot of the project     
 🏠 __Home Page__    
